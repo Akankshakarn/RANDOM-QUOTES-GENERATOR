@@ -1,0 +1,172 @@
+
+body {
+
+  -moz-transition: all .6s; 
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  transition: all .6s;
+}
+
+.container {
+	padding-left: 10vh;
+	margin-left: 20vh;
+	margin-top: 17vh;
+    color: white;
+  } 
+
+header {
+	margin-top: 5vh;
+	font-size: 7vh;
+    text-shadow: 2px 2px gray;
+
+}
+.header:hover{
+	text-shadow: 5px 5px white;
+}
+
+.quote-box {
+	margin-left: 40vh;
+  border-radius: 1px;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  display: inline-block;
+  background-color: rgba(255,255,255,.7);
+}
+
+.quote-area {
+  min-height: 250px;
+  position: relative;
+  }
+
+#quote {
+  padding: 40px 20px;
+  font-size: 40px;
+  font-weight: 600;
+  display: block;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-shadow: 2px 2px gray;
+ 
+}
+#quote:hover{
+	font-size: 45px;
+}
+
+.buttons-area {
+  float: left;
+}
+
+.btn {
+  float: left;
+  border-radius: 1px;
+  font-size: 28px;
+  margin-top: 4vh;
+  margin-right: 8px;
+  color: white;
+}
+
+.btn:first-of-type {
+  margin-right: 24px;
+}
+#random-quote {
+  padding: 12px 24px;
+}
+
+#tweet-quote {
+  padding: 6px 16px;
+  font-size: 30px;
+}
+
+.author-area p::before {
+  content: "- ";
+}
+
+.author-area {
+  float: right;
+}
+
+#author {
+  font-size: 30px;
+  padding: 16px 8px 16px 0px;
+  font-style: italic;
+  
+  top: 20%;
+  text-shadow: 2px 2px gray;
+ 
+}
+#author:hover{
+	
+	font-size: 35px;
+}
+
+footer {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+footer p a {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+  position: relative;
+  margin-top: 0;
+  padding-top: 30px;
+  height: 1vh;
+  } 
+  
+  .quote-box {
+    width: 92%;
+  }
+  .quote-area {
+    min-height: 330px;
+  }
+  #quote {
+  padding: 30px 20px 0 20px;
+  width: 100%;
+  }
+  
+  .author-area {
+    float: none;
+    display: block;
+  }
+  
+  .btn {
+    vertical-align:middle;
+    float: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .buttons-area {
+    margin-bottom: 20px;
+    float: none;
+  }
+  #tweet-quote {
+  padding: 6px 16px;
+  }
+
+}
+@media only screen and (max-width: 400px) {
+  .btn:first-of-type {
+  margin-right: 0;
+  }
+  .quote-box {
+    padding: 0 10px 10px 10px;
+  }
+  .quote-area {
+    min-height: 300px;
+  }
+  #quote {
+  padding: 0;
+  }
+}
